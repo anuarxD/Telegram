@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Boton Flotante Telegram</title>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="floating-wpp.js"></script>
+    <link rel="stylesheet" href="floating-wpp.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div id="myButton"></div>
+</body>
+
+<script type="text/javascript">
+    $(function () {
+        $('#myButton').floatingWhatsApp({
+            phone: 'Anuar_08',
+            popupMessage: 'Hola, ¿Cómo podemos ayudarte?',
+            message: "Necesito más información...",
+            showPopup: true,
+            showOnIE: false,
+            headerTitle: 'Bienvenido!',
+            headerColor: '#23a0dd',
+            backgroundColor: '#23a0dd',
+            buttonImage: '<img src="https://www.flaticon.es/svg/vstatic/svg/2111/2111646.svg?token=exp=1611894298~hmac=93631e192c32b6feb6470c8799db0d89" style="width:95%"></img>'
+        });
+    });
+</script>
+
+</html>
